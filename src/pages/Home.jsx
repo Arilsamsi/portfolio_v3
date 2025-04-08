@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 function Home() {
   return (
@@ -17,26 +17,32 @@ function Home() {
           </p> */}
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Arilsamsi"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:opacity-80"
             >
-              <Github size={24} />
+              <i class="fa-brands fa-github fa-lg"></i>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.instagram.com/arilsamsi/?igsh=aHB5dXY1NTN6N2Q4"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:opacity-80"
             >
-              <Linkedin size={24} />
+              <i class="fa-brands fa-instagram fa-lg"></i>
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="https://www.tiktok.com/@deyissmyluvvv?is_from_webapp=1&sender_device=pc"
               className="p-2 hover:opacity-80"
             >
-              <Mail size={24} />
+              <i class="fa-brands fa-tiktok fa-lg"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/people/Aril-Samsi/pfbid02tW7Lo427vBcTB45jaK6u9rWtBRT9HLwijzHav2wHwiQXD7pgDzQZodPuwt2Nyrbyl/"
+              className="p-2 hover:opacity-80"
+            >
+              <i class="fa-brands fa-facebook fa-lg"></i>
             </a>
           </div>
         </motion.div>

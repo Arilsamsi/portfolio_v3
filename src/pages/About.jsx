@@ -3,15 +3,8 @@ import { motion } from "framer-motion";
 import { Code2, Palette, Globe2 } from "lucide-react";
 import { useTheme } from "../ThemeContext";
 
-//Skills
-import htmlLogo from "../assets/skills/html.png";
-import cssLogo from "../assets/skills/css.png";
-import jsLogo from "../assets/skills/js.png";
-import reactLogo from "../assets/skills/react.png";
-import vueLogo from "../assets/skills/vuejs.png";
-import laravelLogo from "../assets/skills/laravel.png";
-
 import Aril from "../assets/profile/aril.jpg";
+import SkillsSection from "../components/SkillsSection";
 
 function About() {
   const { theme } = useTheme();
@@ -35,7 +28,7 @@ function About() {
   ];
 
   return (
-    <section className="px-6 py-20">
+    <section className="px-6 py-20 min-h-screen">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,73 +66,24 @@ function About() {
                   bermain game, dan saya juga suka dengan Sepak bola.
                 </p>
               </div>
-              <h2 className="text-4xl font-bold mb-8">Skills</h2>
-              <div className="bg-gray-500 w-full flex items-center justify-center gap-4 p-4 rounded-lg">
-                <div className="bg-gray-100 p-4 rounded-lg">
-                  <img
-                    className="w-[50px] h-[50px]"
-                    src={htmlLogo}
-                    alt="html"
-                  />
-                  <span>HTML</span>
-                </div>
-                <div className="bg-gray-100 p-4 rounded-lg">
-                  <img className="w-[50px] h-[50px]" src={cssLogo} alt="css" />
-                  <span>CSS</span>
-                </div>
-                <div className="bg-gray-100 p-4 rounded-lg">
-                  <img className="w-[50px] h-[50px]" src={jsLogo} alt="js" />
-                  <span>JavaScript</span>
-                </div>
-                <div className="bg-gray-100 p-4 rounded-lg">
-                  <img
-                    className="w-[50px] h-[50px]"
-                    src={reactLogo}
-                    alt="react"
-                  />
-                  <span>React</span>
-                </div>
-                <div className="bg-gray-100 p-4 rounded-lg">
-                  <img className="w-[50px] h-[50px]" src={vueLogo} alt="vue" />
-                  <span>Vue</span>
-                </div>
-                <div className="bg-gray-100 p-4 rounded-lg">
-                  <img
-                    className="w-[50px] h-[50px]"
-                    src={laravelLogo}
-                    alt="laravel"
-                  />
-                  <span>Laravel</span>
-                </div>
-              </div>
+              <SkillsSection />
             </div>
           </div>
-
-          {/* <div className="mt-16">
-            <h3 className="text-2xl font-semibold mb-8">Skills & Expertise</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {skills.map((skill, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                  className={`p-6 rounded-xl bg-opacity-5 backdrop-blur-sm ${
-                    theme === "dark" ? "bg-gray-800" : "bg-gray-50"
-                  }`}
-                >
-                  <div className="text-blue-500 mb-4">{skill.icon}</div>
-                  <div>
-                    <h4 className="text-xl font-semibold mb-2">
-                      {skill.title}
-                    </h4>
-                    <p className="opacity-80">{skill.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div> */}
         </motion.div>
+      </div>
+      <div className="bg-gray-100 dark:bg-gray-800 py-10 px-4 md:px-8 rounded-2xl shadow-2xl max-w-4xl mx-auto my-10">
+        <h3 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white">
+          🎧
+        </h3>
+        <div className="w-full rounded-xl overflow-hidden shadow-md">
+          <iframe
+            src="https://open.spotify.com/embed/playlist/5l1UE212LJ41Y6jB1w2lW8?utm_source=generator"
+            className="w-full h-[500px] md:h-[600px] border-0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="Spotify Playlist"
+          ></iframe>
+        </div>
       </div>
     </section>
   );
