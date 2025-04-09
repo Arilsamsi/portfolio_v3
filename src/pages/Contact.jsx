@@ -44,10 +44,54 @@ function Contact() {
                   <div>
                     <h4 className="font-semibold">Email</h4>
                     <a
-                      href="mailto:contact@example.com"
+                      href="mailto:ahmadarilsamsi@gmail.com"
                       className="hover:text-blue-500"
                     >
                       ahmadarilsamsi@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <i class="fa-brands fa-github fa-lg"></i>
+                  <div>
+                    <a
+                      href="https://github.com/Arilsamsi"
+                      className="hover:text-blue-500"
+                    >
+                      <h4 className="font-semibold">Arilsamsi</h4>
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <i class="fa-brands fa-instagram fa-lg"></i>
+                  <div>
+                    <a
+                      href="https://www.instagram.com/arilsamsi/"
+                      className="hover:text-blue-500"
+                    >
+                      <h4 className="font-semibold">arilsamsi</h4>
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <i class="fa-brands fa-tiktok fa-lg"></i>
+                  <div>
+                    <a
+                      href="https://www.tiktok.com/@arilsamsi?is_from_webapp=1&sender_device=pc"
+                      className="hover:text-blue-500"
+                    >
+                      <h4 className="font-semibold">arilsamsi</h4>
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <i class="fa-brands fa-facebook fa-lg"></i>
+                  <div>
+                    <a
+                      href="https://www.facebook.com/people/Aril-Samsi/pfbid02tW7Lo427vBcTB45jaK6u9rWtBRT9HLwijzHav2wHwiQXD7pgDzQZodPuwt2Nyrbyl/"
+                      className="hover:text-blue-500"
+                    >
+                      <h4 className="font-semibold">Aril Samsi</h4>
                     </a>
                   </div>
                 </div>

@@ -62,7 +62,7 @@ function Projects() {
     },
     {
       title: "Website Streaming Anime",
-      description: "Website streaming Anime dan download Anime sub Indo",
+      description: "Website streaming dan download Anime sub Indo",
       image: Projects6,
       link: "https://animestrim.vercel.app/",
       tags: ["React JS", "Tailwind CSS"],
