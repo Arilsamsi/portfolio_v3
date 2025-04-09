@@ -25,14 +25,16 @@ export default function SkillsSection() {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-white hover:bg-gray-100 transition duration-300 shadow-md rounded-xl border border-gray-300 p-2 flex flex-row items-center gap-4 w-full max-w-[300px]"
+            className="bg-white shadow-lg backdrop-blur-md hover:bg-gray-100 transition duration-300 shadow-md rounded-xl border border-gray-300 p-2 flex flex-row items-center gap-4 w-full max-w-[300px]"
           >
             <img
               src={skill.logo}
               alt={skill.name}
               className="w-10 h-10 object-contain"
             />
-            <span className="text-base font-medium">{skill.name}</span>
+            <span className="text-base text-black font-medium">
+              {skill.name}
+            </span>
           </div>
         ))}
       </div>
