@@ -30,7 +30,7 @@ function Projects() {
       description: "Portofolio kedua saya",
       image: Projects8,
       link: "https://ahmadarilsamsi.vercel.app/",
-      tags: ["Vue JS", "Bootstrap"],
+      tags: ["Vue JS", "Tailwind CSS"],
     },
     {
       title: "Website Kelas",
